@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/base.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/Imagenes/menu-close.svg" alt="">
+        <h1>Mi Carrito</h1>
+    </header>
+
+    <hr>
+    <section>
+        <div class="productos-comprados">
+            <div class="tarjeta-carrito">
+                <div class="img-producto-comprado">
+                    <img src="/Imagenes/sonic.png" alt="">
+                </div>
+                <div class="info-carrito">
+                    <div class="info-top">
+                        <div>
+                            <h3>Taza de Ceramica Campus</h3>
+                            <p>Ref: #SKU12345</p>
+                        </div>
+                        <button class="btn-eliminar">🗑</button>
+                    </div>
+                    <div class="info-bottom">
+                        <div class="cantidad">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <div class="total">
+                            <span>$114.00</span>
+                            <span>subtotal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="Factura">
+            <p>Subtotal</p>
+            <div class="Cobro">
+                <span>$96.49</span>
+            </div>
+            <p>Impuestos</p>
+            <div class="Cobro">
+                <span>$18.33</span>
+            </div>
+            <p id="Total">Total</p>
+            <div class="Cobro">
+                <span id="TotalPagar">$114.82</span>
+            </div>
+            <br>
+            <button class="Btn-General">Proceder al Pago</button>
+        </div>
+    </section>
+</body>
+</html>
