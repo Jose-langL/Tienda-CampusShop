@@ -539,3 +539,96 @@ body{
     background: #f5f5f5;
     flex: 1;
 }
+
+/*Resumen del Checkout*/
+.Resumen {
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Resumen h2 {
+    color: #07412f;
+    font-size: 18px;
+}
+
+.tarjeta-resumen {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #eff5f8;
+    padding: 12px;
+}
+
+.productos-checkout{
+    display: flex;
+}
+
+.tarjeta-resumen img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta-resumen p {
+    font-size: 20px;
+    color: #033525;
+}
+
+#Cobro-Checkout{
+    margin-left: auto;
+}
+
+.Total-Checkout{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row; 
+    padding: 18px; 
+    font-size: 25px;
+    border-radius: 15px;
+    background: #eff5f8;
+    color: #07412f;
+}
+
+.metodo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.metodo h1{
+    width: 100%;
+}
+
+.metodo-opciones{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.metodo-pago{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border:1px solid #000000;
+    width: 150px;
+    border-radius: 7%;
+    padding: 5px;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.metodo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
