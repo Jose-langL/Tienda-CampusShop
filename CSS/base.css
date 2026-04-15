@@ -343,14 +343,15 @@ body{
     display: block;
     background-color: #1e3d2f;
     color: white;
-    text-decoration: none;
+    border: none;           /* ← borde del navegador */
+    cursor: pointer;        /* ← manito al pasar */
     text-align: center;
     padding: 15px;
     border-radius: 12px;
     font-size: 16px;
     font-weight: bold;
     width: 95%;
-    margin-top: 150px;
+    margin-top: 8px;        /* ← antes era 150px */
 }
 
 /*Mi carrito*/
@@ -464,12 +465,14 @@ body{
 
 .Factura{
     position: fixed;
+    display: flex;          /* ← faltaba esto */
     flex-direction: column;
     padding: 15px;
     bottom: 0;
     width: 100%;
     background-color: rgb(252, 249, 249);
     border-top: 1px solid rgb(122, 120, 120);
+    gap: 4px;
 }
 
 .Factura p{
@@ -703,13 +706,20 @@ body{
     bottom: 0;
     width: 100%;
     z-index: 100;
+    text-decoration: none;
 }
 
 .Nav2 div {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    gap: 3px;
     font-size: 25px;
     color: #FFFFFF;
-    gap: 3px;
+}
+
+.Nav2 a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
 }
