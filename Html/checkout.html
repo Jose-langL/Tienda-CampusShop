@@ -97,9 +97,28 @@
             <span id="Total">333</span>
             </div>
 
-        <button class="Btn-General">
-            Pagar $224.50
-        </button>
+        <input type="checkbox" id="activar" style="display: none;">
+        <section>
+        <label for="activar" class="Btn-General">
+        Pagar $224.50
+        </label>
+        </section>
+
+        <div class="modal-overlay">
+         <div class="modal-content">
+        <div class="icono-check">
+            <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Éxito">
+        </div>
+        <h1>¡PAGO EXITOSO!</h1>
+        <p class="mensaje-detalle">
+            Tu método de pago ha sido procesado correctamente.
+        </p>
+        
+        <label for="activar" class="btn-finalizar">
+            FINALIZAR
+        </label>
+        </div>
+        </div>
     </section>
 </body>
 
