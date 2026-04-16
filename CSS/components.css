@@ -1,0 +1,596 @@
+/*CATEGORIAS*/
+.categorias {
+    margin-top: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.categorias h2 {
+    width: 100%;
+    color: #07412f;
+}
+
+/* Tarjeta de categoria*/
+.tarjeta-categoria {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(122, 120, 120);
+    background: #d8e2eb;
+    border-radius: 15px;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    gap: 15px;
+}
+
+.tarjeta-categoria h3 {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.tarjeta-categoria img {
+    margin: 6px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #b9d5ee;
+}
+
+/* PRODUCTOS DESTACADOS*/
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px;
+    flex-direction: row;
+}
+
+.productos h2 {
+    color: #07412f;
+    width: 100%;
+}
+
+/* Tarjeta de producto */
+.tarjeta-producto {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(122, 120, 120);
+    background-color: #eff5f8;
+    border-radius: 15px;
+    padding: 15px;
+    width: calc(50% - 8px);
+    position: relative;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.productos .tarjeta-producto {
+    width: auto;
+    min-width: 100px;
+    position: relative;
+}
+
+.tarjeta-producto h3 {
+    font-size: 15px;
+    color: #033525;
+    text-align: left;
+}
+
+.tarjeta-producto p {
+    font-size: 15px;
+    color: #033525;
+    text-align: left;
+}
+
+.img-producto {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.img-producto img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*CATALOGO*/
+
+/* Filtros del catalogo */
+.filtros {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 8px 15px;
+}
+
+.filtro {
+    color: #07412f;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 9px 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Grid del catalogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.catalogo .tarjeta-producto {
+    width: auto;
+    min-width: 100px;
+    position: relative;
+}
+
+/* Insignias sobre tarjetas de producto */
+.insignia-oferta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #06815a;
+    color: white;
+    font-size: 15px;
+    padding: 3px 8px;
+    border-radius: 7px;
+}
+
+.insignia-PCStock {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #06815a;
+    color: white;
+    font-size: 15px;
+    padding: 3px 8px;
+    border-radius: 7px;
+}
+
+/* Pie de la tarjeta con precio y boton */
+.tarjeta-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*BOTONES*/
+
+/* Boton circular para agregar al carrito */
+.btn-carrito {
+    background: #05581a;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-carrito img {
+    width: 67%;
+    height: 100%;
+}
+
+/* Boton principal de accion (Pagar, Continuar, etc.) */
+.Btn-General {
+    display: block;
+    background-color: #1e3d2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 95%;
+    margin-top: 8px;
+}
+
+/* Boton para eliminar un item del carrito */
+.btn-eliminar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(216, 38, 38);
+}
+
+/*CARRITO VACIO */
+
+.Carrito-Vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.Img-Carrito-Vacio img {
+    width: 200px;
+    height: 200px;
+    background-color: #d6dbd9;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Carrito-Vacio h2 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.Carrito-Vacio p {
+    font-size: 20px;
+    color: rgb(54, 53, 53);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*MI CARRITO*/
+
+/* Lista de productos en el carrito */
+.productos-comprados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* Tarjeta de producto en el carrito */
+.tarjeta-carrito {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(252, 249, 249);
+    border-radius: 15px;
+    border: 1px solid rgb(122, 120, 120);
+    padding: 12px;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.img-producto-comprado {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.img-producto-comprado img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.info-carrito {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-top h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.info-top p {
+    font-size: 12px;
+    color: gray;
+}
+
+.info-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Selector de cantidad del producto */
+.cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cantidad button {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cantidad span {
+    font-size: 14px;
+}
+
+/* Total por producto */
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.total span:first-child {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.total span:last-child {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Factura del carrito */
+.Factura {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(252, 249, 249);
+    border-top: 1px solid rgb(122, 120, 120);
+    gap: 4px;
+}
+
+.Factura p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #848d89;
+}
+
+#Total {
+    font-size: 17px;
+    font-weight: 900;
+    color: #0b0c0c;
+}
+
+.Cobro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Cobro span {
+    font-size: 17px;
+    font-weight: 500;
+    color: #0b0c0c;
+}
+
+#TotalPagar {
+    font-size: 17px;
+    font-weight: 900;
+    color: #0b0c0c;
+}
+
+/*CHECKOUT*/
+
+.Checkout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    color: #07412f;
+}
+
+.input-group {
+    margin: 5px;
+    font-size: 25px;
+    outline: none;
+    width: 100%;
+    border: none;
+}
+
+/* formulario de checkout */
+.info-checkout {
+    display: flex;
+    top: 58px;
+    max-width: 700px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    background: #b6b1b1;
+    z-index: 50;
+    margin: 5px;
+}
+
+.info-checkout input {
+    padding: 7px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    background: #f5f5f5;
+    flex: 1;
+}
+
+/* Resumen del checkout */
+.Resumen {
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Resumen h2 {
+    color: #07412f;
+    font-size: 18px;
+}
+
+.tarjeta-resumen {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #eff5f8;
+    padding: 12px;
+}
+
+.productos-checkout {
+    display: flex;
+}
+
+.tarjeta-resumen img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta-resumen p {
+    font-size: 20px;
+    color: #033525;
+}
+
+#Cobro-Checkout {
+    margin-left: auto;
+}
+
+/* Total final del checkout */
+.Total-Checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    padding: 18px;
+    font-size: 25px;
+    border-radius: 15px;
+    background: #eff5f8;
+    color: #07412f;
+}
+
+/* Selector de metodo de pago */
+.metodo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.metodo h1 {
+    width: 100%;
+}
+
+.metodo-opciones {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.metodo-pago {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid #000000;
+    background: #d8e2eb;
+    width: 150px;
+    border-radius: 7%;
+    padding: 5px;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.metodo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/*PERFIL*/
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Imagen o avatar del usuario */
+.avatar {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.informacion2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grid de opciones del perfil */
+.tarjeta-opciones {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 30px;
+}
+
+.opcion {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #089669;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}

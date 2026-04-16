@@ -1,0 +1,142 @@
+/* Header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #0B3D2E;
+    z-index: 50;
+    color: #FFFFFF;
+}
+
+.header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+}
+
+.header img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Boton del menu*/
+.activador {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px;
+}
+
+/* Menu lateral*/
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 230px;
+    backdrop-filter: blur(100px);
+    background: #0B3D2E;
+    transform: translateX(-100px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s ease;
+    padding: 30px 15px;
+    z-index: 100;
+}
+
+.activador:hover ~ .navbar,
+.navbar:hover {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+}
+
+.navbar h1 {
+    color: #99f09c;
+    font-size: 22px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.navbar li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Barra de busqueda */
+.barra_buscar {
+    display: flex;
+    margin-left: 50px;
+    top: 58px;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1px;
+    border: none;
+    background: #b6b1b1;
+    z-index: 50;
+}
+
+.barra_buscar input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    background: #F5F5F5;
+}
+
+.barra-buscar-btn {
+    display: none;
+}
+
+/* Barra de navegacion inferior*/
+.Nav2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0B3D2E;
+    padding: 10px;
+    border-top: 4px solid #727171;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.Nav2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.Nav2 a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+}
