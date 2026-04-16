@@ -74,6 +74,10 @@
     margin-bottom: 4px;
 }
 
+.navbar li :hover{
+    background: #0f533f;
+}
+
 .navbar ul {
     list-style: none;
 }
@@ -93,9 +97,9 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 1px;
+    padding: 2px;
     border: none;
-    background: #b6b1b1;
+    background: #cfcccc;
     z-index: 50;
 }
 

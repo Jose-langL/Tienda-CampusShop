@@ -170,7 +170,6 @@
 }
 
 /*BOTONES*/
-
 /* Boton circular para agregar al carrito */
 .btn-carrito {
     background: #05581a;
@@ -187,10 +186,11 @@
     height: 100%;
 }
 
+
 /* Boton principal de accion (Pagar, Continuar, etc.) */
 .Btn-General {
     display: block;
-    background-color: #1e3d2f;
+    background: #1e3d2f;
     color: white;
     border: none;
     cursor: pointer;
@@ -225,8 +225,8 @@
 }
 
 .Img-Carrito-Vacio img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-color: #d6dbd9;
     border-radius: 50%;
     justify-content: center;
