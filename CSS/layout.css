@@ -144,3 +144,35 @@
     font-size: 25px;
     color: #FFFFFF;
 }
+
+/*Barra de preguntas*/
+
+.barra_preguntas{
+    display: flex;
+    margin-left: 50px;
+    top: 58px;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2px;
+    border: none;
+    background: #cfcccc;
+    z-index: 50;
+
+}
+
+.barra_preguntas input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    background: #F5F5F5;
+}
+
+.barra-preguntas-btn {
+    display: none;
+}
+
